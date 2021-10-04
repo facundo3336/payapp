@@ -1,0 +1,55 @@
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+
+    header {
+        background-color: map-get($colors, 'lightGreen');
+        padding: 10px 0;
+
+        .headerContain {
+            display: flex;
+            justify-content: space-between;
+            
+            .headerLogo {
+                width: 140px;
+                height: auto;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
+               
+            }
+
+            .navBar {
+                display: flex;
+                align-items: center;
+
+                .navbar {
+                    .navbar-toggler-icon {
+                        width: 1.4rem;
+                    }
+                }
+
+                
+            }
+        }
+        .navbar-collapse {
+            a {
+                color:white
+            }
+
+           .downloadButton {
+                margin-bottom: 10px;
+                padding: 7px 10px;
+                border-radius: 5px;
+                text-decoration: none;
+                background-color: map-get($colors, 'darkBlue');
+                color: white;
+                width: auto;   
+                display: inline-block;
+                
+            }
+        }
+
+        
+    }
+}

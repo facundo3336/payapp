@@ -1,0 +1,38 @@
+.sideSpacing {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.container {
+  margin: 0 auto; }
+
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif; }
+  body header {
+    background-color: #74cdc3;
+    padding: 10px 0; }
+    body header .headerContain {
+      display: flex;
+      justify-content: space-between; }
+      body header .headerContain .headerLogo {
+        width: 140px;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center; }
+      body header .headerContain .navBar {
+        display: flex;
+        align-items: center; }
+        body header .headerContain .navBar .navbar .navbar-toggler-icon {
+          width: 1.4rem; }
+    body header .navbar-collapse a {
+      color: white; }
+    body header .navbar-collapse .downloadButton {
+      margin-bottom: 10px;
+      padding: 7px 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      background-color: #162535;
+      color: white;
+      width: auto;
+      display: inline-block; }

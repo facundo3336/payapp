@@ -1,0 +1,15 @@
+$colors: (
+    "lightGreen": #74cdc3,
+    "darkBlue": #162535
+);
+
+.sideSpacing {
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.container {
+    margin: 0 auto
+}
+
+@import './index.scss';
