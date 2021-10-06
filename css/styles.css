@@ -2,37 +2,292 @@
   padding-left: 20px;
   padding-right: 20px; }
 
+.generalButton {
+  color: white;
+  background-color: #74cdc3;
+  padding: 10px 35px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bolder;
+  display: inline-block; }
+
+.onlyMobile {
+  display: none; }
+
 .container {
   margin: 0 auto; }
 
 body {
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif; }
-  body header {
-    background-color: #74cdc3;
-    padding: 10px 0; }
-    body header .headerContain {
+  font-family: "Montserrat", sans-serif; }
+
+header {
+  background-color: #74cdc3;
+  padding: 10px 0; }
+  header .headerContain {
+    display: flex;
+    justify-content: space-between; }
+    header .headerContain .headerLogo {
+      width: 140px;
+      height: auto;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center; }
+    header .headerContain .navBar {
       display: flex;
-      justify-content: space-between; }
-      body header .headerContain .headerLogo {
-        width: 140px;
-        height: auto;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center center; }
-      body header .headerContain .navBar {
-        display: flex;
-        align-items: center; }
-        body header .headerContain .navBar .navbar .navbar-toggler-icon {
-          width: 1.4rem; }
-    body header .navbar-collapse a {
-      color: white; }
-    body header .navbar-collapse .downloadButton {
-      margin-bottom: 10px;
-      padding: 7px 10px;
-      border-radius: 5px;
-      text-decoration: none;
-      background-color: #162535;
-      color: white;
+      align-items: center; }
+      header .headerContain .navBar .navbar .navbar-toggler-icon {
+        width: 1.4rem; }
+  header .navbar-collapse a {
+    color: white; }
+  header .navbar-collapse .downloadButton {
+    margin-bottom: 10px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #162535;
+    color: white;
+    width: auto;
+    display: inline-block; }
+
+.celularContainer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .celularContainer .titleBox {
+    margin-right: 10px;
+    position: relative;
+    z-index: 1; }
+    .celularContainer .titleBox p {
+      font-size: 0.9rem;
+      font-weight: 700; }
+    .celularContainer .titleBox h2 {
+      font-size: 1.45rem;
+      margin-bottom: 20px;
+      margin-right: 10px;
+      font-weight: 700; }
+  .celularContainer .celularSectionBox {
+    z-index: 0;
+    position: relative; }
+    .celularContainer .celularSectionBox .redCircle {
+      border-radius: 50%;
+      background-color: #c75252;
+      width: 100%;
+      padding-bottom: 100%;
+      filter: blur(20px);
+      position: absolute;
+      z-index: 0;
+      top: 40%;
+      left: -50%;
+      transform: translate(0px, -50%); }
+    .celularContainer .celularSectionBox img {
+      position: relative;
+      z-index: 1;
       width: auto;
-      display: inline-block; }
+      height: 250px; }
+
+.appSection {
+  background-color: #162535;
+  color: white;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top: 30px;
+  text-align: center; }
+  .appSection p {
+    font-size: 0.8rem;
+    text-align: center; }
+  .appSection h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 700; }
+  .appSection .appInstructions .appInstruction {
+    margin-top: 40px;
+    display: flex;
+    align-items: center; }
+    .appSection .appInstructions .appInstruction .instructionImage {
+      height: 150px;
+      width: 45%;
+      background-position: center center;
+      background-size: cover;
+      margin: 0 auto;
+      border-radius: 20px; }
+    .appSection .appInstructions .appInstruction .instructionTitle {
+      text-align: center;
+      color: #74cdc3;
+      display: block;
+      margin: 10px 0; }
+  .appSection .shopNowButton {
+    width: 180px;
+    text-align: center;
+    margin: 35px auto 0 auto; }
+
+.aboutUsSection {
+  text-align: center;
+  margin: 30px 0; }
+  .aboutUsSection .aboutUs h5 {
+    font-size: 2rem;
+    font-weight: 700; }
+  .aboutUsSection .aboutUs p {
+    font-size: 0.85rem;
+    margin: 15px 0; }
+  .aboutUsSection .aboutUsImage img {
+    display: none; }
+
+.ourWorkSection {
+  text-align: center; }
+  .ourWorkSection .workSection h5 {
+    font-size: 2rem;
+    font-weight: 700; }
+  .ourWorkSection .workDescription {
+    color: #c75252;
+    background-color: #162535;
+    border-radius: 20px;
+    padding: 20px; }
+  .ourWorkSection p {
+    font-size: 0.85rem;
+    margin: 15px 0;
+    font-weight: 700; }
+
+.ourCompanySection {
+  text-align: center;
+  background-color: #162535;
+  margin-top: 30px;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .ourCompanySection h5 {
+    font-size: 1.9rem;
+    font-weight: 700; }
+  .ourCompanySection p {
+    font-size: 0.8rem;
+    margin: 10px 0 30px 0;
+    font-weight: 400; }
+  .ourCompanySection img {
+    width: 100%; }
+
+.blogSection h4 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 30px; }
+
+.blogSection .articles .article {
+  text-align: center; }
+  .blogSection .articles .article h6 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 20px; }
+  .blogSection .articles .article .articleImage {
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 20px;
+    margin-top: 30px; }
+  .blogSection .articles .article .redMoreArticle {
+    margin: 10px 0;
+    display: block;
+    color: black;
+    font-weight: 500;
+    font-size: 0.9rem; }
+
+.newsletterSection .newsletter {
+  text-align: center;
+  margin-top: 50px; }
+  .newsletterSection .newsletter h5 {
+    font-weight: 700;
+    font-size: 1.9rem; }
+  .newsletterSection .newsletter p {
+    font-weight: 500;
+    margin: 20px 0; }
+
+.newsletterSection .form {
+  width: 100%;
+  background-color: #162535;
+  padding: 20px; }
+  .newsletterSection .form .formTitle {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px; }
+  .newsletterSection .form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'name surname' 'email email' 'textarea textarea';
+    grid-gap: 15px; }
+    .newsletterSection .form form input, .newsletterSection .form form .formTextarea {
+      width: 100%;
+      padding: 3px 10px; }
+    .newsletterSection .form form .formName {
+      grid-row: name / name;
+      grid-column: name / name; }
+    .newsletterSection .form form .formSurname {
+      grid-column-start: surname;
+      grid-column-end: surname;
+      grid-row-start: surname;
+      grid-row-end: surname; }
+    .newsletterSection .form form .formEmail {
+      grid-column-start: email;
+      grid-column-end: email;
+      grid-row-start: email;
+      grid-row-end: email; }
+    .newsletterSection .form form .formTextarea {
+      grid-column-start: textarea;
+      grid-column-end: textarea;
+      grid-row-start: textarea;
+      grid-row-end: textarea;
+      margin-bottom: 20px; }
+
+.contactSection {
+  text-align: center;
+  margin-top: 50px; }
+  .contactSection h5 {
+    font-size: 1.8rem;
+    font-weight: 700; }
+  .contactSection p {
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    font-weight: 400; }
+  .contactSection iframe {
+    margin-bottom: 20px; }
+
+footer {
+  background-color: #162535;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 100px; }
+
+.navSection {
+  position: relative; }
+  .navSection .footerLogo {
+    width: 100px; }
+  .navSection nav {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 30px;
+    width: 75%; }
+    .navSection nav a {
+      color: white;
+      font-weight: 400;
+      font-size: 0.8rem;
+      text-decoration: none; }
+  .navSection .footerMobileImg {
+    width: 25%;
+    position: absolute;
+    right: 0px;
+    top: -90px; }
+
+.socialMediaSection {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  margin-top: 50px; }
+  .socialMediaSection p {
+    font-weight: 400;
+    font-size: 0.8rem; }
+  .socialMediaSection .socialMedias a {
+    color: white;
+    text-decoration: none;
+    margin: 0 3px; }

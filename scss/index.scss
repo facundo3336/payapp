@@ -1,55 +1,409 @@
 body {
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
 
-    header {
-        background-color: map-get($colors, 'lightGreen');
-        padding: 10px 0;
+header {
+    background-color: map-get($colors, "lightGreen");
+    padding: 10px 0;
 
-        .headerContain {
+    .headerContain {
+        display: flex;
+        justify-content: space-between;
+
+        .headerLogo {
+            width: 140px;
+            height: auto;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+        }
+
+        .navBar {
             display: flex;
-            justify-content: space-between;
-            
-            .headerLogo {
-                width: 140px;
-                height: auto;
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center center;
-               
-            }
+            align-items: center;
 
-            .navBar {
-                display: flex;
-                align-items: center;
-
-                .navbar {
-                    .navbar-toggler-icon {
-                        width: 1.4rem;
-                    }
+            .navbar {
+                .navbar-toggler-icon {
+                    width: 1.4rem;
                 }
-
-                
             }
         }
-        .navbar-collapse {
-            a {
-                color:white
-            }
-
-           .downloadButton {
-                margin-bottom: 10px;
-                padding: 7px 10px;
-                border-radius: 5px;
-                text-decoration: none;
-                background-color: map-get($colors, 'darkBlue');
-                color: white;
-                width: auto;   
-                display: inline-block;
-                
-            }
+    }
+    .navbar-collapse {
+        a {
+            color: white;
         }
 
-        
+        .downloadButton {
+            margin-bottom: 10px;
+            padding: 7px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            background-color: map-get($colors, "darkBlue");
+            color: white;
+            width: auto;
+            display: inline-block;
+        }
+    }
+}
+
+.celularContainer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .titleBox {
+        margin-right: 10px;
+        position: relative;
+        z-index: 1;
+
+        p {
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.45rem;
+            margin-bottom: 20px;
+            margin-right: 10px;
+            font-weight: 700;
+        }
+    }
+
+    .celularSectionBox {
+        z-index: 0;
+        position: relative;
+
+        .redCircle {
+            border-radius: 50%;
+            background-color: map-get($colors, "red");
+            width: 100%;
+            padding-bottom: 100%;
+            filter: blur(20px);
+            position: absolute;
+            z-index: 0;
+            top: 40%;
+            left: -50%;
+            transform: translate(0px, -50%);
+        }
+
+        img {
+            position: relative;
+            z-index: 1;
+            width: auto;
+            height: 250px;
+        }
+    }
+}
+
+.appSection {
+    background-color: map-get($colors, "darkBlue");
+    color: white;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-top: 30px;
+    text-align: center;
+
+    p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .appInstructions {
+        .appInstruction {
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+
+            .instructionImage {
+                height: 150px;
+                width: 45%;
+                background-position: center center;
+                background-size: cover;
+                margin: 0 auto;
+                border-radius: 20px;
+            }
+
+            .instructionTitle {
+                text-align: center;
+                color: map-get($colors, "lightGreen");
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    }
+
+    .shopNowButton {
+        width: 180px;
+        text-align: center;
+        margin: 35px auto 0 auto;
+    }
+}
+
+
+.aboutUsSection {
+    text-align: center;
+    margin: 30px 0;   
+
+    .aboutUs {
+        h5 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 0.85rem;
+            margin: 15px 0;
+        }
+    }
+
+    .aboutUsImage {
+        img {
+            display: none;
+        }
+    }
+}
+
+.ourWorkSection {
+    text-align: center;
+
+    .workSection {
+        h5 {
+        font-size: 2rem;
+        font-weight: 700;
+        }
+    }
+
+    .workDescription {
+        color: map-get($colors, "red");
+        background-color: map-get($colors, "darkBlue");
+        border-radius: 20px;
+        padding: 20px;
+    }
+    
+
+    p {
+        font-size: 0.85rem;
+        margin: 15px 0;
+        font-weight: 700;
+    }
+}
+
+.ourCompanySection {
+    text-align: center;
+    background-color: map-get($colors, "darkBlue");
+    margin-top: 30px;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    h5 {
+        font-size: 1.9rem;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 0.8rem;
+        margin: 10px 0 30px 0;
+        font-weight: 400;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.blogSection {
+
+    h4 {
+        font-size: 1.9rem;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .articles {
+        .article {
+            text-align: center;
+
+            h6 {
+                font-size: 1.2rem;
+                font-weight: 700;
+                margin-top: 20px;
+            }
+            .articleImage {
+                height: 200px;
+                background-position: center center;
+                background-size: cover;
+                border-radius: 20px;
+                margin-top: 30px;
+            }
+
+            .redMoreArticle {
+                margin: 10px 0;
+                display: block;
+                color: black;
+                font-weight: 500;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+.newsletterSection {
+    .newsletter {
+        text-align: center;
+        margin-top: 50px;
+
+        h5 {
+            font-weight: 700;
+            font-size: 1.9rem;
+        }
+
+        p {
+            font-weight: 500;
+            margin: 20px 0;
+        }
+    }
+
+    .form {
+        width: 100%;
+        background-color: map-get($colors, "darkBlue");
+        padding: 20px;
+
+        .formTitle {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 'name surname'
+                                 'email email'
+                                 'textarea textarea';
+            grid-gap: 15px;
+            
+            
+
+            input, .formTextarea {
+                width: 100%;
+                padding: 3px 10px;
+            }
+
+            .formName {
+                grid-row: name / name;
+                grid-column: name / name;
+            }
+
+            .formSurname {
+                grid-column-start: surname;
+                grid-column-end: surname;
+                grid-row-start: surname;
+                grid-row-end: surname;
+            }
+
+            .formEmail {
+                grid-column-start: email;
+                grid-column-end: email;
+                grid-row-start: email;
+                grid-row-end: email;
+            }
+
+            .formTextarea {
+                grid-column-start: textarea;
+                grid-column-end: textarea;
+                grid-row-start: textarea;
+                grid-row-end: textarea;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.contactSection {
+    text-align: center;
+    margin-top: 50px;
+
+    h5 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+
+    iframe {
+        margin-bottom: 20px;
+    }
+}
+
+footer {
+    background-color: map-get($colors, "darkBlue");
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 100px;
+}
+
+.navSection {
+    position: relative;
+
+    .footerLogo {
+        width: 100px;
+    }
+
+    nav {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        line-height: 30px;
+        width: 75%;
+
+        a {
+            color: white;
+            font-weight: 400;
+            font-size: 0.8rem;
+            text-decoration: none;
+        }
+    }
+
+    .footerMobileImg {
+        width: 25%;
+        position: absolute;
+        right: 0px;
+        top: -90px;
+    }
+} 
+
+.socialMediaSection {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    p {
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+
+    .socialMedias {
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 0 3px;
+        }
     }
 }
