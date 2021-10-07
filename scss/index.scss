@@ -11,6 +11,10 @@ header {
         display: flex;
         justify-content: space-between;
 
+        .onlyDesktop {
+            display: none;
+        }
+
         .headerLogo {
             width: 140px;
             height: auto;
@@ -95,6 +99,10 @@ header {
             width: auto;
             height: 250px;
         }
+
+        .celularText {
+            display: none;
+        }
     }
 }
 
@@ -176,9 +184,18 @@ header {
     text-align: center;
 
     .workSection {
+
+        img {
+            display: none;
+        }
+
         h5 {
         font-size: 2rem;
         font-weight: 700;
+        }
+
+        p {
+            font-weight: 400;
         }
     }
 
@@ -405,5 +422,388 @@ footer {
             text-decoration: none;
             margin: 0 3px;
         }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .celularContainer {
+        justify-content: space-around;
+
+        .titleBox {
+            max-width: 380px;
+
+            h2 {
+                font-size: 3.2rem;
+                font-weight: 700;
+            }
+
+            p {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                max-width: 300px;
+            }
+        }
+
+        .celularSectionBox {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            position: relative;
+
+            img {
+                height: 400px;
+            }
+
+            .celularText {
+                display: block;
+                width: 250px;
+                padding: 28px;
+                box-shadow: -15px 9px 24px 5px rgba(0,0,0,0.21);
+                -webkit-box-shadow: -15px 9px 24px 5px rgba(0,0,0,0.21);
+                -moz-box-shadow: -15px 9px 24px 5px rgba(0,0,0,0.21);
+                border-radius: 20px;
+                position: absolute;
+                top: 250px;
+                right: 100px;
+                z-index: 2;
+                background-color: white;
+
+                span {
+                    font-weight: 700;
+                    font-size: 1.3rem;
+                    margin-bottom: 5px;
+                    display: block;
+                    line-height: 1.5rem;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .appSection {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        p {
+            width: 550px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .appInstructions {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            .appInstruction {
+                display: block;
+                margin-top: 60px;
+                justify-content: space-between;
+                width: 170px;
+
+                &:last-child {
+                    margin-bottom: 40px;
+                }
+
+                p {
+                    display: block;
+                    width: 180px;
+                    margin: 0 auto;
+                }
+
+                .instructionImage {
+                    height: 220px;
+                    width: 150px;
+                    
+                }
+            }
+        }
+    }
+
+    .aboutUsSection {
+        display: flex;
+        justify-content: space-between;
+
+        .aboutUs {
+            text-align: left;
+            width: 50%;
+            display: block;
+
+            h5 {
+                margin-bottom: 25px;
+            }
+
+            .generalButton {
+                margin-top: 25px;
+            }
+        }
+
+        .aboutUsImage {
+            width: 40%;
+            img {
+                display: block;
+                width: 90%;
+            }
+        }
+    }
+
+    .ourWorkSection {
+        margin-top: 80px;
+        margin-bottom: 140px;
+        position: relative;
+
+
+        .workSection {
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                display: block;
+                width: 35%;
+            }
+
+            .ourWorkTitleSection {
+                width: 55%;
+                text-align: left;
+            }
+        }
+
+
+        .workDescription {
+            max-width: 250px;
+            padding: 30px;
+            position: absolute;
+            top: 150px;
+            left: 70px;
+        }
+
+    }
+
+    .ourCompanySection {
+        padding-bottom: 80px;
+        padding-top: 60px;
+
+        p {
+            width: 80%;
+            margin: 10px auto 45px auto;
+        }
+    }
+
+    .blogSection {
+        .articles {
+            display: flex;
+            justify-content: space-between;
+
+            .article {
+                width: 30%;
+
+                .articleImage {
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    .newsletterSection {
+        .form {
+            padding: 40px;
+        }
+    }
+
+    .contactSection {
+        h5 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 40px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 350px;
+        }
+    }
+
+    footer {
+        .navSection {
+            .footerMobileImg {
+                width: 15%;
+                right: 70px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sideSpacing {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .navBar {
+            .onlyDesktop {
+                display: block;
+            }
+    
+            .nav-link {
+                margin: 0 12px;
+                color: white !important;
+                font-weight: 500;
+                
+            }
+    
+            .downloadButton {
+                color: white;
+                margin-left: 40px;
+                border-radius: 20px;
+                padding: 5px 30px;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+        }
+
+        
+    }
+
+    .celularContainer {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        align-items: flex-start;
+        justify-content: center;
+
+        .titleBox {
+            max-width: 550px;
+            margin-top: 40px;
+            margin-right: 100px;
+
+            h2 {
+                font-size: 4.8rem;
+                line-height: 5rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+                font-weight: 500;
+                margin: 50px 0;
+            }
+        }
+
+        .celularSectionBox {
+            img {
+                height: 550px;
+            }
+
+            .celularText {
+                width: 290px;
+                top: 320px;
+                right: 170px;
+
+                span {
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+    .appSection {
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        h3 {
+            font-size: 2.1rem;
+        }
+
+        .appText {
+            font-size: 1.05rem;
+            font-weight: 400;
+        }
+
+        .appInstructions {
+            display: flex;
+            justify-content: center;
+
+            .appInstruction {
+                width: auto;
+                margin-right: 10px;
+                margin-left: 10px;
+
+                .instructionImage {
+                    margin-bottom: 20px;
+                    height: 280px;
+                    width: 210px;
+                }
+
+                .instructionTitle {
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .aboutUsSection {
+        margin-top: 130px;
+        align-items: center;
+        justify-content: space-around;
+
+        .aboutUs {
+            width: 35%;
+
+            h5 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-weight: 500;
+                width: 90%;
+            }
+        }
+
+        .aboutUsImage {
+            width: 45%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .ourWorkSection {
+        .workSection {
+            justify-content: space-around;
+            align-items: center;
+
+            img {
+                width: 45%;
+            }
+
+            .ourWorkTitleSection {
+                width: 40%;
+    
+                h5 {
+                    font-size: 2.5rem;
+                    margin-bottom: 30px;
+                }
+    
+                p {
+                    font-weight: 500;
+                    width: 80%;
+                }
+            }
+        }
+
+        
     }
 }

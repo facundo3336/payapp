@@ -2,6 +2,10 @@
   padding-left: 20px;
   padding-right: 20px; }
 
+.generalContainer {
+  max-width: 1400px;
+  margin: 0 auto; }
+
 .generalButton {
   color: white;
   background-color: #74cdc3;
@@ -27,6 +31,8 @@ header {
   header .headerContain {
     display: flex;
     justify-content: space-between; }
+    header .headerContain .onlyDesktop {
+      display: none; }
     header .headerContain .headerLogo {
       width: 140px;
       height: auto;
@@ -86,6 +92,8 @@ header {
       z-index: 1;
       width: auto;
       height: 250px; }
+    .celularContainer .celularSectionBox .celularText {
+      display: none; }
 
 .appSection {
   background-color: #162535;
@@ -136,9 +144,13 @@ header {
 
 .ourWorkSection {
   text-align: center; }
+  .ourWorkSection .workSection img {
+    display: none; }
   .ourWorkSection .workSection h5 {
     font-size: 2rem;
     font-weight: 700; }
+  .ourWorkSection .workSection p {
+    font-weight: 400; }
   .ourWorkSection .workDescription {
     color: #c75252;
     background-color: #162535;
@@ -291,3 +303,226 @@ footer {
     color: white;
     text-decoration: none;
     margin: 0 3px; }
+
+@media screen and (min-width: 768px) {
+  .celularContainer {
+    justify-content: space-around; }
+    .celularContainer .titleBox {
+      max-width: 380px; }
+      .celularContainer .titleBox h2 {
+        font-size: 3.2rem;
+        font-weight: 700; }
+      .celularContainer .titleBox p {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        max-width: 300px; }
+    .celularContainer .celularSectionBox {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      position: relative; }
+      .celularContainer .celularSectionBox img {
+        height: 400px; }
+      .celularContainer .celularSectionBox .celularText {
+        display: block;
+        width: 250px;
+        padding: 28px;
+        box-shadow: -15px 9px 24px 5px rgba(0, 0, 0, 0.21);
+        -webkit-box-shadow: -15px 9px 24px 5px rgba(0, 0, 0, 0.21);
+        -moz-box-shadow: -15px 9px 24px 5px rgba(0, 0, 0, 0.21);
+        border-radius: 20px;
+        position: absolute;
+        top: 250px;
+        right: 100px;
+        z-index: 2;
+        background-color: white; }
+        .celularContainer .celularSectionBox .celularText span {
+          font-weight: 700;
+          font-size: 1.3rem;
+          margin-bottom: 5px;
+          display: block;
+          line-height: 1.5rem; }
+        .celularContainer .celularSectionBox .celularText p {
+          font-size: 0.8rem;
+          font-weight: 500; }
+  .appSection {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+    .appSection p {
+      width: 550px;
+      display: block;
+      margin: 0 auto; }
+    .appSection .appInstructions {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr; }
+      .appSection .appInstructions .appInstruction {
+        display: block;
+        margin-top: 60px;
+        justify-content: space-between;
+        width: 170px; }
+        .appSection .appInstructions .appInstruction:last-child {
+          margin-bottom: 40px; }
+        .appSection .appInstructions .appInstruction p {
+          display: block;
+          width: 180px;
+          margin: 0 auto; }
+        .appSection .appInstructions .appInstruction .instructionImage {
+          height: 220px;
+          width: 150px; }
+  .aboutUsSection {
+    display: flex;
+    justify-content: space-between; }
+    .aboutUsSection .aboutUs {
+      text-align: left;
+      width: 50%;
+      display: block; }
+      .aboutUsSection .aboutUs h5 {
+        margin-bottom: 25px; }
+      .aboutUsSection .aboutUs .generalButton {
+        margin-top: 25px; }
+    .aboutUsSection .aboutUsImage {
+      width: 40%; }
+      .aboutUsSection .aboutUsImage img {
+        display: block;
+        width: 90%; }
+  .ourWorkSection {
+    margin-top: 80px;
+    margin-bottom: 140px;
+    position: relative; }
+    .ourWorkSection .workSection {
+      display: flex;
+      justify-content: space-between; }
+      .ourWorkSection .workSection img {
+        display: block;
+        width: 35%; }
+      .ourWorkSection .workSection .ourWorkTitleSection {
+        width: 55%;
+        text-align: left; }
+    .ourWorkSection .workDescription {
+      max-width: 250px;
+      padding: 30px;
+      position: absolute;
+      top: 150px;
+      left: 70px; }
+  .ourCompanySection {
+    padding-bottom: 80px;
+    padding-top: 60px; }
+    .ourCompanySection p {
+      width: 80%;
+      margin: 10px auto 45px auto; }
+  .blogSection .articles {
+    display: flex;
+    justify-content: space-between; }
+    .blogSection .articles .article {
+      width: 30%; }
+      .blogSection .articles .article .articleImage {
+        width: auto; }
+  .newsletterSection .form {
+    padding: 40px; }
+  .contactSection h5 {
+    margin-bottom: 15px; }
+  .contactSection p {
+    margin-bottom: 40px; }
+  .contactSection iframe {
+    width: 100%;
+    height: 350px; }
+  footer .navSection .footerMobileImg {
+    width: 15%;
+    right: 70px; } }
+
+@media screen and (min-width: 768px) {
+  .sideSpacing {
+    padding-left: 45px;
+    padding-right: 45px; }
+  header {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    header .navBar .onlyDesktop {
+      display: block; }
+    header .navBar .nav-link {
+      margin: 0 12px;
+      color: white !important;
+      font-weight: 500; }
+    header .navBar .downloadButton {
+      color: white;
+      margin-left: 40px;
+      border-radius: 20px;
+      padding: 5px 30px;
+      font-weight: 500;
+      margin-bottom: 0; }
+  .celularContainer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    align-items: flex-start;
+    justify-content: center; }
+    .celularContainer .titleBox {
+      max-width: 550px;
+      margin-top: 40px;
+      margin-right: 100px; }
+      .celularContainer .titleBox h2 {
+        font-size: 4.8rem;
+        line-height: 5rem; }
+      .celularContainer .titleBox p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin: 50px 0; }
+    .celularContainer .celularSectionBox img {
+      height: 550px; }
+    .celularContainer .celularSectionBox .celularText {
+      width: 290px;
+      top: 320px;
+      right: 170px; }
+      .celularContainer .celularSectionBox .celularText span {
+        font-size: 1.5rem;
+        line-height: 1.8rem; }
+      .celularContainer .celularSectionBox .celularText p {
+        font-size: 0.9rem; }
+  .appSection {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+    .appSection h3 {
+      font-size: 2.1rem; }
+    .appSection .appText {
+      font-size: 1.05rem;
+      font-weight: 400; }
+    .appSection .appInstructions {
+      display: flex;
+      justify-content: center; }
+      .appSection .appInstructions .appInstruction {
+        width: auto;
+        margin-right: 10px;
+        margin-left: 10px; }
+        .appSection .appInstructions .appInstruction .instructionImage {
+          margin-bottom: 20px;
+          height: 280px;
+          width: 210px; }
+        .appSection .appInstructions .appInstruction .instructionTitle {
+          font-weight: 700;
+          font-size: 1.2rem; }
+  .aboutUsSection {
+    margin-top: 130px;
+    align-items: center;
+    justify-content: space-around; }
+    .aboutUsSection .aboutUs {
+      width: 35%; }
+      .aboutUsSection .aboutUs h5 {
+        font-size: 2.5rem; }
+      .aboutUsSection .aboutUs p {
+        font-weight: 500;
+        width: 90%; }
+    .aboutUsSection .aboutUsImage {
+      width: 45%; }
+      .aboutUsSection .aboutUsImage img {
+        width: 100%; }
+  .ourWorkSection .workSection {
+    justify-content: space-around;
+    align-items: center; }
+    .ourWorkSection .workSection img {
+      width: 45%; }
+    .ourWorkSection .workSection .ourWorkTitleSection {
+      width: 40%; }
+      .ourWorkSection .workSection .ourWorkTitleSection h5 {
+        font-size: 2.5rem;
+        margin-bottom: 30px; }
+      .ourWorkSection .workSection .ourWorkTitleSection p {
+        font-weight: 500;
+        width: 80%; } }

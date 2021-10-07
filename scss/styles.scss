@@ -10,6 +10,11 @@ $colors: (
 
 }
 
+.generalContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 .generalButton {
     color: white;
     background-color: map-get($colors, "lightGreen");
