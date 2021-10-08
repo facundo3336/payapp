@@ -4,14 +4,9 @@ $colors: (
     "red": #c75252
 );
 
-.sideSpacing {
-    padding-left: 20px;
-    padding-right: 20px
-
-}
-
 .generalContainer {
-    max-width: 1400px;
+    width: calc(100% - 40px);
+    max-width: 950px;
     margin: 0 auto;
 }
 
